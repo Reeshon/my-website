@@ -72,7 +72,7 @@ footer {
     font-size: 0.5em; /* Reduce font size */
 }
 .hero {
-    background-image: url('https://raw.githubusercontent.com/Reeshon/my-website/main/background.png');
+    background-image: url('https://via.placeholder.com/1920x1080');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,4 +169,18 @@ footer {
 }
 .social-media img:hover {
     transform: scale(1.1);
+}
+.card {
+    margin-bottom: 20px;
+}
+.card img {
+    border-radius: 10px;
+}
+.card-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.card-text {
+    font-size: 1.2em;
+    color: #666;
 }
