@@ -3,40 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Update</title>
+    <title>{{Business Name}} Website</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .test-container {
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-        .test-square {
-            width: 200px;
-            height: 200px;
-            background-color: #ff0000;
-            margin: 20px auto;
-            animation: rotate 2s infinite linear;
+        nav {
+            margin: 20px 0;
+            text-align: center;
         }
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hero {
+            background-image: url('https://raw.githubusercontent.com/Reeshon/my-website/main/background.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="test-container">
-        <h1>Update Test Page</h1>
-        <div class="test-square"></div>
-        <p>If you see this page with a spinning red square, the update was successful!</p>
-        <p>Updated at: <script>document.write(new Date().toLocaleString())</script></p>
+    <header>
+        <img src="https://raw.githubusercontent.com/Reeshon/my-website/main/logo.png" alt="{{Business Name}} Logo" style="max-width: 150px;">
+        <h1>Welcome to {{Business Name}}</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to {{Business Name}}</h1>
+        <p>{{Hero Message}}</p>
+        <a href="#contact" class="button">{{Call to Action}}</a>
     </div>
+    <div class="container">
+        <div id="about" class="content">
+            <h2>About Us</h2>
+            <p>{{About Us Text}}</p>
+        </div>
+        <div id="services" class="content">
+            <h2>Our Services</h2>
+            <ul>
+                <li>{{Service 1}}</li>
+                <li>{{Service 2}}</li>
+                <li>{{Service 3}}</li>
+            </ul>
+        </div>
+        <div id="contact" class="content">
+            <h2>Contact Us</h2>
+            <p>Email: {{Contact Email}}</p>
+            <p>Phone: {{Contact Phone}}</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; {{Current Year}} {{Business Name}}</p>
+        <p style="font-size: 0.8em;">Last updated: <script>document.write(new Date().toLocaleString())</script></p>
+    </footer>
 </body>
 </html>
