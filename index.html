@@ -3,82 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Enhanced Website</title>
+    <title>Test Update</title>
     <style>
         body {
+            background-color: #000;
+            color: #fff;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+        .test-container {
             text-align: center;
         }
-        nav {
-            margin: 20px 0;
-            text-align: center;
+        .test-square {
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+            margin: 20px auto;
+            animation: rotate 2s infinite linear;
         }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .content {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Enhanced Website</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div id="about" class="content">
-            <h2>About Us</h2>
-            <p>We are a team of passionate developers creating amazing websites.</p>
-        </div>
-        <div id="services" class="content">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>App Development</li>
-                <li>SEO Optimization</li>
-            </ul>
-        </div>
-        <div id="contact" class="content">
-            <h2>Contact Us</h2>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
+    <div class="test-container">
+        <h1>Update Test Page</h1>
+        <div class="test-square"></div>
+        <p>If you see this page with a spinning red square, the update was successful!</p>
+        <p>Updated at: <script>document.write(new Date().toLocaleString())</script></p>
     </div>
-    <footer>
-        <p>&copy; 2023 My Enhanced Website</p>
-    </footer>
 </body>
 </html>
