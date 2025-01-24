@@ -22,6 +22,10 @@ REM Check Git status
 echo Checking status...
 git status
 
+REM Pull the latest changes from the remote repository
+echo Pulling the latest changes from the remote repository...
+git pull origin main
+
 REM Add all changes to git
 echo Adding changes...
 git add .
