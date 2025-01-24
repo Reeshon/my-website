@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Deleens Home Bake`,
-    description: `Deleens Home Bake - Your home for delicious homemade baked goods.`,
+    description: `An online store resembling an Instagram shop.`,
     author: `@deleens`,
   },
   plugins: [
@@ -20,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
