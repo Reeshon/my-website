@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Deleens Home Bake</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="order.html">Order</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Deleens Home Bake</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="container">
+    <div class="container mt-5">
         <div class="content">
             <h2>Our Story</h2>
             <p>Learn more about Deleens Home Bake. (Placeholder for company history)</p>
         </div>
         <div class="content">
             <h2>Meet the Team</h2>
-            <div class="team-gallery">
-                <!-- Placeholder for team member images and descriptions -->
-                <img src="https://via.placeholder.com/150" alt="Team Member 1">
-                <img src="https://via.placeholder.com/150" alt="Team Member 2">
-                <img src="https://via.placeholder.com/150" alt="Team Member 3">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3" class="img-fluid">
+                </div>
             </div>
         </div>
         <div class="content">
@@ -32,5 +54,12 @@
             <p>Read what our customers have to say. (Placeholder for customer testimonials)</p>
         </div>
     </div>
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Deleens Home Bake</p>
+        <p>Last updated: <script>document.write(new Date().toLocaleString())</script></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
