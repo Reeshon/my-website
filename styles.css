@@ -132,3 +132,41 @@ footer {
 .button:hover {
     background-color: #e5533d;
 }
+
+.features img, .testimonials img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.features h3, .testimonials h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.features p, .testimonials p {
+    font-size: 1em;
+    color: #666;
+}
+.testimonials blockquote {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.about, .newsletter {
+    text-align: center;
+}
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.newsletter .form-control {
+    margin-bottom: 10px;
+}
+.social-media img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.social-media img:hover {
+    transform: scale(1.1);
+}
