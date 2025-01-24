@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Deleens Home Bake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/Reeshon/my-website/main/logo.png" alt="Deleens Home Bake Logo" style="max-width: 150px;">
+        <h1>Order from Deleens Home Bake</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="order-details">Order Details:</label>
+                <textarea id="order-details" name="order-details" required></textarea>
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions"></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+        <div class="content">
+            <h2>Our Products</h2>
+            <div class="product-gallery">
+                <!-- Placeholder for product images and descriptions -->
+            </div>
+        </div>
+        <div class="content">
+            <h2>Pricing</h2>
+            <p>Here are the prices for our products. (Placeholder for pricing information)</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Deleens Home Bake</p>
+        <p style="font-size: 0.8em;">Last updated: <script>document.write(new Date().toLocaleString())</script></p>
+    </footer>
+</body>
+</html>
