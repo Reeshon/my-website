@@ -9,6 +9,26 @@ body {
     background-repeat: no-repeat;
     color: #333;
 }
+.ribbon {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.ribbon img {
+    max-width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ribbon h1 {
+    display: inline;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
 header {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
